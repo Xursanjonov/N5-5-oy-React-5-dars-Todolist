@@ -1,0 +1,116 @@
+.todolist {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  gap: 1.4rem;
+}
+.todolist-title {
+  font-size: 2.5rem;
+}
+.todolist-form-control {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+
+  button {
+    padding: 0.4rem 1rem;
+    background-color: lime;
+    border: 1px solid lime;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  button:active {
+    background-color: green;
+    color: white;
+  }
+}
+input {
+  padding: 0.4rem 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.todolist-form-radioInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+
+.todolist-users {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+
+  li {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 .1rem gray;
+    background-color: white;
+
+    .todos-title {
+      width: 1200px;
+      padding: 0.8rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 1.5rem;
+    }
+
+    .todos-btns {
+      width: 100px;
+      margin: .2rem auto 0;
+      padding: 0.3rem 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+
+      .pen {
+        padding: .4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        border-radius: 4px;
+        background-color: orange;
+      }
+      .trash {
+        padding: .4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        border-radius: 4px;
+        background-color: red;
+      }
+    }
+
+    div p span {
+        color: blue;
+        font-weight: 600;
+      }
+    }
+}
